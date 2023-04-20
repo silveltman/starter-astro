@@ -1,0 +1,65 @@
+---
+import { constructURL } from 'google-fonts-helper'
+import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer'
+import siteConfig from '@data/config.mjs'
+import { SEO } from 'astro-seo'
+
+const pageSeo = Astro.props.seo
+const seo = {
+  charset: 'UTF-8',
+  title: pageSeo?.title,
+  description: pageSeo?.description,
+  image: pageSeo?.image,
+  openGraph: {
+    basic: {
+      title: pageSeo?.title,
+      type: 'website',
+      image: siteConfig.url + pageSeo?.image,
+    }
+  }
+}
+
+
+// Google fonts
+const googleFontsURL = constructURL({
+  families: siteConfig.googleFonts,
+})
+
+// Google Analytics
+const googleAnalyticsId = siteConfig.googleAnalyticsId
+---
+
+<meta
+  content="width=device-width, initial-scale=1, viewport-fit=cover"
+  name="viewport"
+/>
+<!-- <meta
+  name="generator"
+  content={Astro.generator}
+/> -->
+
+<!-- SEO tags -->
+<SEO {...seo}></SEO>
+
+<!-- Google fonts -->
+{googleFontsURL && <GoogleFontsOptimizer url={googleFontsURL} /> }
+
+<!-- Google Analytics -->
+{
+  googleAnalyticsId && (
+    <>
+    <script type="text/partytown">
+      <script
+        is:inline
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+      />
+      <script>
+        window.dataLayer = window.dataLayer || [] function gtag(){' '}
+        {window.dataLayer.push(arguments)}
+        gtag('js', new Date()) gtag('config', googleAnalyticsId)
+      </script>
+    </script>
+    </>
+  )
+}

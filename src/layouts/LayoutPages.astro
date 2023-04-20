@@ -1,0 +1,22 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Blocks from '@components/Blocks.svelte'
+
+type Props = {
+  seo?: {
+    title: string
+    description: string
+    image: string
+  }
+  content_blocks: object[] | object
+}
+
+const props = Astro.props.frontmatter ?? Astro.props
+const seo = props.seo
+---
+
+<Layout {seo}>
+  <main>
+    <Blocks contentBlocks={props.content_blocks} />
+  </main>
+</Layout>
