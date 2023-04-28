@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      heading: '"Rubik", sans-serf',
+      heading: '"Inter", sans-serf',
       body: '"Inter", sans-serif',
     },
     borderRadius: {
