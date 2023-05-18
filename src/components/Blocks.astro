@@ -1,0 +1,24 @@
+---
+import BlocksRenderer from './BlocksRenderer.svelte'
+
+// const liveRender = import.meta.env.PUBLIC_LIVE_RENDER === 'true'
+const liveRender = true
+
+interface Props {
+  pageData: object
+}
+
+const { pageData } = Astro.props
+---
+
+{
+  liveRender ? (
+    <BlocksRenderer
+      pageData={pageData}
+      client:load
+      dataBinding="#blocks"
+    />
+  ) : (
+    <BlocksRenderer pageData={pageData} dataBinding={false} />
+  )
+}

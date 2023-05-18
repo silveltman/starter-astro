@@ -1,5 +1,11 @@
 ---
+import { getEntryBySlug } from 'astro:content'
+import Layout from '@layouts/Layout.astro'
+import Blocks from '@components/Blocks.astro'
 
+const page = await getEntryBySlug('pages', 'index')
 ---
 
-<h1>Helloo</h1>
+<Layout seo={page.data.seo}>
+  <Blocks pageData={page.data}/>
+</Layout>

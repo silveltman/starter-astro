@@ -12,11 +12,11 @@ import robotsTxt from 'astro-robots-txt'
 import yaml from '@rollup/plugin-yaml'
 
 // Global site config
-import siteConfig from './src/data/config.mjs'
+import site from './src/data/site.mjs'
 
 // https://astro.build/config
 export default defineConfig({
-  site: siteConfig.url,
+  site: site.url,
   integrations: [
     tailwind(),
     svelte(),

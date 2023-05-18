@@ -1,5 +1,7 @@
 {
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
+    "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
       "@layouts/*": [
@@ -15,6 +17,5 @@
         "src/content/*"
       ]
     }
-  },
-  "extends": "astro/tsconfigs/strict"
+  }
 }

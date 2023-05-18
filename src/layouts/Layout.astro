@@ -1,25 +1,30 @@
 ---
-import siteConfig from '@data/config.mjs'
+import site from '@data/site.mjs'
 import Head from '@components/Head.astro'
 import TheHeader from '@components/TheHeader.svelte'
 import TheFooter from '@components/TheFooter.svelte'
+import { Whatsapp } from 'fulldev-ui'
 
 const { seo } = Astro.props
 ---
 
 <!DOCTYPE html>
 <html
-  lang={siteConfig.lang}
-  class="h-full w-full overflow-x-hidden scroll-smooth"
+  lang={site.lang}
+  class="color-scheme-dark dark h-full w-full overflow-x-hidden scroll-smooth"
 >
   <head>
     <Head {seo} />
-    </head>
-  <body
-    class="relative h-full w-full overflow-x-hidden scroll-smooth"
-  >
-    <TheHeader />
+  </head>
+  <body class="relative h-full w-full scroll-smooth light">
+    <!-- <TheHeader pathname={Astro.url.pathname} /> -->
     <slot />
-    <TheFooter />
+    <!-- <TheFooter /> -->
+    <Whatsapp tel="31649670696" />
+    <style>
+      .color-scheme-dark {
+        color-scheme: dark;
+      }
+    </style>
   </body>
 </html>

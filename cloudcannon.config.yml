@@ -56,7 +56,15 @@ _inputs:
 
   seo.image:
     label: Page image
-    comment: Displayed when sharing link
+    comment: Displayed when sharing a link to this page
+
+  seo.noindex:
+    label: Noindex
+    comment: Prevent search engines from indexing this page
+
+  seo.canonical:
+    label: Canonical URL
+    comment: The preferred URL for this page, meaning the url search engines will index, instead of the current one
 
   image.src:
     type: image
@@ -65,3 +73,7 @@ _inputs:
 
   image.alt:
     label: Description
+
+  href:
+    type: url
+    label: Link

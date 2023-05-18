@@ -1,65 +1,51 @@
 ---
 import { constructURL } from 'google-fonts-helper'
 import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer'
-import siteConfig from '@data/config.mjs'
+import site from '@data/site.mjs'
 import { SEO } from 'astro-seo'
 
 const pageSeo = Astro.props.seo
-const seo = {
+const defaultSeo = {
   charset: 'UTF-8',
-  title: pageSeo?.title,
-  description: pageSeo?.description,
-  image: pageSeo?.image,
+  titleDefault: site.name,
   openGraph: {
     basic: {
-      title: pageSeo?.title,
+      title: site.name,
       type: 'website',
-      image: siteConfig.url + pageSeo?.image,
-    }
-  }
+      image: Astro.url.pathname + site.image,
+    },
+  },
+}
+const mergedSeo = {
+  ...defaultSeo,
+  ...pageSeo,
 }
 
-
 // Google fonts
-const googleFontsURL = constructURL({
-  families: siteConfig.googleFonts,
-})
+// const googleFonts = siteConfig.googleFonts
+// const googleFontsURL = constructURL({
+//   families: googleFonts,
+// })
 
 // Google Analytics
-const googleAnalyticsId = siteConfig.googleAnalyticsId
+// const googleAnalyticsId = siteConfig.googleAnalyticsId
 ---
 
 <meta
   content="width=device-width, initial-scale=1, viewport-fit=cover"
   name="viewport"
 />
-<!-- <meta
+<meta
   name="generator"
   content={Astro.generator}
-/> -->
+/>
 
 <!-- SEO tags -->
-<SEO {...seo}></SEO>
+<SEO {...mergedSeo} />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <!-- Google fonts -->
-{googleFontsURL && <GoogleFontsOptimizer url={googleFontsURL} /> }
-
-<!-- Google Analytics -->
-{
-  googleAnalyticsId && (
-    <>
-    <script type="text/partytown">
-      <script
-        is:inline
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-      />
-      <script>
-        window.dataLayer = window.dataLayer || [] function gtag(){' '}
-        {window.dataLayer.push(arguments)}
-        gtag('js', new Date()) gtag('config', googleAnalyticsId)
-      </script>
-    </script>
-    </>
-  )
-}
+<!-- {googleFontsURL && <GoogleFontsOptimizer url={googleFontsURL} /> } -->
