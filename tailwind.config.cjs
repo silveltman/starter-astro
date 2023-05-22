@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const radixColors = require("@radix-ui/colors");
+const radixColors = require('@radix-ui/colors')
 
 function getRadixColors(object) {
   const newObject = {}
@@ -18,9 +18,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      base: '"Open Sans", sans-serif',
-      heading: '"Rubik", sans-serif',
-      subheading: '"Rubik ", sans-serif',
+      base: '"Inter", sans-serif',
+      heading: '"Inter", sans-serif',
+      subheading: '"Inter ", sans-serif',
     },
     fontWeight: {
       base: 300,
@@ -38,7 +38,7 @@ module.exports = {
     borderRadius: {
       box: '1rem',
       card: '0.5rem',
-      button: '0.5rem',
+      button: '0.2rem',
       input: '0.5rem',
       image: '0.5rem',
     },
@@ -58,34 +58,18 @@ module.exports = {
           extend: {
             colors: {
               base: getRadixColors(radixColors.sand),
-            }
-          }
+            },
+          },
         },
         {
           name: 'dark',
           extend: {
             colors: {
               base: getRadixColors(radixColors.sandDark),
-            }
-          }
+            },
+          },
         },
-        {
-          name: 'amber',
-          extend: {
-            colors: {
-              base: getRadixColors(radixColors.amber)
-            }
-          }
-        },
-        {
-          name: 'amber-dark',
-          extend: {
-            colors: {
-              base: getRadixColors(radixColors.amberDark)
-            }
-          }
-        }
-      ]
+      ],
     }),
     require('fulldev-ui/plugin'),
   ],

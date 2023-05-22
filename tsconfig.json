@@ -17,5 +17,6 @@
         "src/content/*"
       ]
     }
-  }
+  },
+  "include": ["src/**/*", "node_modules/fulldev-ui/dist/**/*.d.ts"],
 }

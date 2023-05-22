@@ -19,7 +19,8 @@ blocks:
         text: Neem contact op
         href: '#'
     image:
-      src: /hero.jpg
+      src: |
+        /remote-image-cache/21256765a69fdec74ea27fb6.webp
       alt: My hero image
   projects:
     _component: ProjectCarousel
@@ -34,6 +35,8 @@ blocks:
   cta:
     _component: Cta
     highlight:
+    image:
+      src: /remote-image-cache/0310a93cf5169ae2672b7d9c.webp
       eyebrow: Klaar voor een mooie tuin?
       heading: Laten we in gesprek gaan
       textarea: |

@@ -11,10 +11,12 @@ collection_groups:
   - heading: Pages
     collections:
       - pages
-  - heading: General
+      - landing
+      - legal
+  - heading: Products
     collections:
-      - data
-
+      - collections
+      - products
 # -----------------------------------------------
 # Collection configuration
 # -----------------------------------------------
@@ -33,6 +35,18 @@ collections_config:
     disable_add_folder: true
     _enabled_editors:
       - visual
+  collections:
+    path: src/content/collections
+    output: true
+    icon: grid_view
+    _enabled_editors:
+      - data
+  legal:
+    path: src/content/legal
+    output: true
+    icon: description
+    _enabled_editors:
+      - content
 
 # -----------------------------------------------
 # Input customization
@@ -40,6 +54,9 @@ collections_config:
 
 _inputs:
   layout:
+    hidden: true
+
+  noindex:
     hidden: true
 
   seo:

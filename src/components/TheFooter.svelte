@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Eyebrow, Footer, Link } from 'fulldev-ui'
+  import { Footer, Link } from 'fulldev-ui'
   import { IconArrowNarrowRight } from '@tabler/icons-svelte'
 
   const aanbod = [
@@ -44,7 +44,7 @@
   </div>
   <a
     href="/contact"
-    class="group amber bg-base-2 ringed rounded-box p-2xl sm:col-span-2 xl:col-span-1"
+    class="amber ringed group rounded-box bg-base-2 p-2xl sm:col-span-2 xl:col-span-1"
   >
     <h1 class="text-base-12">We helpen <br /> u graag!</h1>
     <span class="flex flex-wrap items-center gap-sm pt-xl">

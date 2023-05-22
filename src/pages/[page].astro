@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '@layouts/Layout.astro'
+import Blocks from '@components/helpers/Blocks.astro'
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages')
+  return pages.map((entry) => ({
+    params: { page: entry.slug },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+---
+
+<Layout seo={entry.data.seo}>
+  <Blocks pageData={entry.data} />
+</Layout>

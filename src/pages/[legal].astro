@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '@layouts/Layout.astro'
+import Prose from '@components/blocks/Prose.svelte'
+
+export async function getStaticPaths() {
+  const pages = await getCollection('legal')
+  return pages.map((entry) => ({
+    params: { legal: entry.slug },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await entry.render()
+---
+
+<Layout seo={entry.data.seo}>
+  <Prose>
+    <Content />
+  </Prose>
+</Layout>
