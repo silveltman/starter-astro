@@ -1,7 +1,6 @@
 ---
-import { constructURL } from 'google-fonts-helper'
-import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer'
-import site from '@data/site.mjs'
+import GoogleFonts from './GoogleFonts.astro'
+import site from '@data/site'
 import { SEO } from 'astro-seo'
 
 const pageSeo = Astro.props.seo
@@ -26,10 +25,9 @@ const mergedSeo = {
 // const googleFontsURL = constructURL({
 //   families: googleFonts,
 // })
-
-// Google Analytics
-// const googleAnalyticsId = siteConfig.googleAnalyticsId
 ---
+
+<GoogleFonts />
 
 <meta
   content="width=device-width, initial-scale=1, viewport-fit=cover"

@@ -1,0 +1,52 @@
+---
+import { constructURL, isValidURL } from 'google-fonts-helper'
+import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer'
+
+import { theme } from '../../../tailwind.config.cjs'
+
+// import colors from 'tailwindcss/colors'
+// const green = colors.green[600] // #16a34a
+
+// console.log(colors)
+
+// import
+// const tailwindConfig = require('../../../tailwind.config.cjs')
+
+// import tailwindc from '../../../tailwind.config.cjs'
+
+// console.log(tailwindConfig)
+// import tailwindconfig from 'tailwind.config'
+
+// console.log(tailwindconfig)
+
+// const { fontFamily, fontWeight } = tailwindconfig.theme
+
+// interface FamilyObject {
+//     [family: string]: {
+//         wght?: number[]
+//     }
+// }
+
+// function getFamilyFromString(string: string): string {
+//   return string.split(',')[0].trim().replace(/^['"\s]+|['"\s]+$/g, '')
+// }
+
+// // Match font family to font weight
+// const familiesObject: FamilyObject = {}
+// for (const [key, value] of Object.entries(fontFamily)) {
+//   const family = getFamilyFromString(value)
+//   if (!familiesObject[family]) {
+//     familiesObject[family] = { wght: [] }
+//   }
+//   const weight = fontWeight?.[key]
+//   if (weight) {
+//     familiesObject[family].wght?.push(weight)
+//   }
+// }
+
+// const url: string | false = constructURL({families: familiesObject})
+// const isValid = isValidURL(url.toString())
+---
+
+<!-- {(url && isValid) && <GoogleFontsOptimizer url={url} />} -->
+<div class="font-button"></div>

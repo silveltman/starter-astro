@@ -1,8 +1,8 @@
 import { z, defineCollection } from 'astro:content'
 
 const Seo = z.object({
-  title: z.string(),
-  description: z.string(),
+  title: z.string().optional(),
+  description: z.string().optional(),
   image: z.string().optional(),
   noindex: z.boolean().optional(),
   canonical: z.string().optional(),

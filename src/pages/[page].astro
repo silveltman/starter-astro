@@ -15,5 +15,6 @@ const { entry } = Astro.props
 ---
 
 <Layout seo={entry.data.seo}>
+  <!-- Automatically renders all items in 'blocks' of the page's frontmatter -->
   <Blocks pageData={entry.data} />
 </Layout>
