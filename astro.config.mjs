@@ -6,8 +6,10 @@ import svelte from '@astrojs/svelte'
 import sitemap from '@astrojs/sitemap'
 import prefetch from '@astrojs/prefetch'
 
-// Third party plugins
+// Third party astro plugins
 import robotsTxt from 'astro-robots-txt'
+
+// Vite plugins
 import yaml from '@rollup/plugin-yaml'
 
 // Global site config

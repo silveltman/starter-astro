@@ -16,7 +16,11 @@
       "@content/*": [
         "src/content/*"
       ]
-    }
+    },
+    // "types": [
+    //   "@modyfi/vite-plugin-yaml/modules"
+    //   ],
   },
   "include": ["src/**/*", "node_modules/fulldev-ui/dist/**/*.d.ts"],
+
 }

@@ -7,44 +7,27 @@ seo:
 blocks:
   hero:
     _component: Hero
-    highlight:
-      eyebrow: Martens grondwerken
-      heading: Voor al uw tuinwerken
-      textarea: |
-        Het renoveren van een bestaande tuin of het uitvoeren van kleinere aanpassingen, maar ook voor de aanleg van de tuin op een nieuwbouw kavel bent u bij ons op het juiste adres. Het begint met grondwerk en daarnaast doen we nog veel meer.
-      button_primary:
-        text: Onze projecten
-        href: '#'
-      button_secondary:
-        text: Neem contact op
-        href: '#'
+    eyebrow: Lorem ipsum
+    heading: Lorem ipsum dolor sit amet.
+    textarea: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quos.
+    button_1:
+      text: Lorem ipsum
+      href: '#'
+    button_2:
+      text: Lorem ipsum
+      href: '#'
     image:
-      src: |
-        /remote-image-cache/21256765a69fdec74ea27fb6.webp
-      alt: My hero image
-  projects:
-    _component: ProjectCarousel
-  reviews:
-    _component: ReviewMasonry
-    highlight:
-      eyebrow: Geloof ons niet
-      heading: Dit is wat onze klanten zeggen
-      button_primary:
-        text: Bekijk reviews op Google
-        href: '#'
+      src: https://unsplash.it/1200/1200?random=1
+      alt: My alt
   cta:
     _component: Cta
-    highlight:
-    image:
-      src: /remote-image-cache/0310a93cf5169ae2672b7d9c.webp
-      eyebrow: Klaar voor een mooie tuin?
-      heading: Laten we in gesprek gaan
-      textarea: |
-        Het renoveren van een bestaande tuin of het uitvoeren van kleinere aanpassingen, maar ook voor de aanleg van de tuin op een nieuwbouw kavel bent u bij ons op het juiste adres. Het begint met grondwerk en daarnaast doen we nog veel meer.
-      button_primary:
-        text: Neem contact op
-        href: '#'
-      button_secondary:
-        text: Kom langs op locatie
-        href: '#'
+    eyebrow: Lorem ipsum
+    heading: Lorem ipsum dolor sit amet.
+    textarea: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quos.
+    button_1:
+      text: Lorem ipsum
+      href: '#'
+    button_2:
+      text: Lorem ipsum
+      href: '#'
 ---
