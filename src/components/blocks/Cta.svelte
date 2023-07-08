@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { Section, Container, Highlight, Split, Button, Box } from 'fulldev-ui'
+  import { Section, Container, Highlight, Stack, Button, Panel } from 'fulldev-ui'
 
   export let content: any
 </script>
 
 <Section class="dark">
   <Container>
-    <Box>
+    <Panel>
       <Highlight center>
         <span class="text-sm text-base-11">Lorem ipsum</span>
         <h2 class="dark text-base-12">{content.heading}</h2>
@@ -23,6 +23,6 @@
           />
         </svelte:fragment>
       </Highlight>
-    </Box>
+    </Panel>
   </Container>
 </Section>
