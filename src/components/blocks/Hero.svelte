@@ -3,7 +3,7 @@
     Section,
     Container,
     Highlight,
-    Split,
+    Stack,
     Button,
     Image,
   } from 'fulldev-ui'
@@ -13,7 +13,7 @@
 
 <Section class="dark pt-0">
   <Container>
-    <Split center>
+    <Stack center>
       <Highlight class="large">
         <span class="text-sm text-base-11">Lorem ipsum</span>
         <h2>{content.heading}</h2>
@@ -31,6 +31,6 @@
         </svelte:fragment>
       </Highlight>
       <Image {...content.image} />
-    </Split>
+    </Stack>
   </Container>
 </Section>

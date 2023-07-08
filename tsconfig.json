@@ -4,23 +4,14 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@data/*": [
-        "src/data/*"
-      ],
-      "@content/*": [
-        "src/content/*"
-      ]
-    },
+      "@layouts/*": ["src/layouts/*"],
+      "@components/*": ["src/components/*"],
+      "@data/*": ["src/data/*"],
+      "@content/*": ["src/content/*"]
+    }
     // "types": [
     //   "@modyfi/vite-plugin-yaml/modules"
     //   ],
   },
-  "include": ["src/**/*", "node_modules/fulldev-ui/dist/**/*.d.ts"],
-
+  "include": ["src/**/*", "node_modules/fulldev-ui/dist/**/*.d.ts"]
 }
