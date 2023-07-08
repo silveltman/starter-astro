@@ -7,8 +7,8 @@ interface Site {
 }
 
 const site: Site = {
-  name: '',
-  url: '',
+  name: 'COMPANY NAME',
+  url: 'https://loremipsum.com',
   image: '',
   logo: '/logo.svg',
   lang: 'nl',

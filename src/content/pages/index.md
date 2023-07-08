@@ -17,7 +17,7 @@ blocks:
       text: Lorem ipsum
       href: '#'
     image:
-      src: https://unsplash.it/1200/1200?random=1
+      src: /hero.jpg
       alt: My alt
   cta:
     _component: Cta
