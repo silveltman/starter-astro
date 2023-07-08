@@ -8,5 +8,21 @@ const page = await getEntryBySlug('pages', 'index')
 
 <Layout seo={page.data.seo}>
   <!-- Custom component go here -->
-  <Blocks pageData={page.data} />
+  <!-- <Blocks pageData={page.data} />
+  <button class="button buttonGhost"></button>
+  <img src="/hero.jpg" alt="myimg">
+  <img src="https://images.unsplash.com/photo-1688565826068-f3f79f724a9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt=""> -->
+
+  <section class="section container large hue-primary">
+      <div class="panel split">
+        <div class="flex flex-col gap-md">
+          <h1 class="heading">Hello World</h1>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem odio similique.</p>
+          <div class="flex gap-md">
+            <button class="button button-solid">Click me</button>
+            <button class="button button-soft">Click me</button>
+          </div>
+        </div>
+      </div>
+  </section>
 </Layout>

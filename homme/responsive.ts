@@ -51,14 +51,14 @@ export default function myPreset(options: any = null): Preset {
             --space-multiplier: 0.75;
             --text-sm: 14px;
             --text-md: 16px;
-            --text-lg: 28px;
+            --text-lg: 30px;
           }
           @media (min-width: 640px) {
             .medium {
               --space-multiplier: 1;
               --text-sm: 16px;
               --text-md: 18px;
-              --text-lg: 30px;
+              --text-lg: 36px;
             }
           }
         `,
@@ -70,14 +70,14 @@ export default function myPreset(options: any = null): Preset {
               --space-multiplier: 1.125;
               --text-sm: 16px;
               --text-md: 18px;
-              --text-lg: 32px;
+              --text-lg: 36px;
             }
             @media (min-width: 640px) {
               .large {
                 --space-multiplier: 1.5;
                 --text-sm: 18px;
                 --text-md: 20px;
-                --text-lg: 34px;
+                --text-lg: 60px;
               }
             }
           `,
