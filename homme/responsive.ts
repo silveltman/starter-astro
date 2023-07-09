@@ -90,18 +90,18 @@ export default function myPreset(options: any = null): Preset {
     ],
     theme: {
       spacing: {
-        xs: 'calc( 4px * var(--space-multiplier, 1))',
-        sm: 'calc( 8px * var(--space-multiplier, 1))',
-        md: 'calc( 16px * var(--space-multiplier, 1))',
-        lg: 'calc( 32px * var(--space-multiplier, 1))',
-        xl: 'calc( 64px * var(--space-multiplier, 1))',
-        '2xl': 'calc( 128px * var(--space-multiplier, 1))',
-        '3xl': 'calc( 256px * var(--space-multiplier, 1))',
+        xs: 'calc(4px * var(--space-multiplier, 1))',
+        sm: 'calc(8px * var(--space-multiplier, 1))',
+        md: 'calc(16px * var(--space-multiplier, 1))',
+        lg: 'calc(32px * var(--space-multiplier, 1))',
+        xl: 'calc(64px * var(--space-multiplier, 1))',
+        '2xl': 'calc(128px * var(--space-multiplier, 1))',
+        '3xl': 'calc(256px * var(--space-multiplier, 1))',
       },
       fontSize: {
-        sm: 'var(--text-sm)',
-        md: 'var(--text-md)',
-        lg: 'var(--text-lg)',
+        sm: 'var(--text-sm, 16px)',
+        md: 'var(--text-md, 18px)',
+        lg: 'var(--text-lg, 36px)',
       },
     },
   }
