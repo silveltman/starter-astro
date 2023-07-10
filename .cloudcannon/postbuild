@@ -1,17 +1,21 @@
 #!/bin/bash
-    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
-    echo "ENV_EDITING: $ENV_EDITING"
-    echo "ENV: $ENV"
-    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
+
+# Print the environment variable values for debugging
+echo "ENV: $ENV"
+echo "ENV.production: $ENV.production"
+echo "ENV.editing: $ENV.editing"
+echo "ENV_PRODUCTION: $ENV_PRODUCTION"
+echo "ENV_EDITING: $ENV_EDITING"
+echo "ENV_PRODUCTION: $PRODUCTION"
+echo "ENV_EDITING: $EDITING"
+
 
 # Check if ENV.production is true
 if [ "$ENV_PRODUCTION" = "true" ]
 then
     # If true, run the desired command
-    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
     echo "Running jampack ./dist..."
     jampack ./dist
 else
-    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
     echo "Not running jampack. ENV.production is not true."
 fi
