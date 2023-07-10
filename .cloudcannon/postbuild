@@ -1,17 +1,6 @@
 #!/bin/bash
 
-# Print the environment variable values for debugging
-echo "ENV: $ENV"
-echo "ENV.production: $ENV.production"
-echo "ENV.editing: $ENV.editing"
-echo "ENV_PRODUCTION: $ENV_PRODUCTION"
-echo "ENV_EDITING: $ENV_EDITING"
-echo "PRODUCTION: $PRODUCTION"
-echo "EDITING: $EDITING"
-
-
-# Check if ENV.production is true
-if [ "$ENV_PRODUCTION" = "true" ]
+if [ "$PRODUCTION" = "true" ]
 then
     # If true, run the desired command
     echo "Running jampack ./dist..."
