@@ -9,10 +9,11 @@ interface Props {
 }
 
 const { pageData, keys } = Astro.props
-const liveRender = import.meta.env.EDITING === "true";
+const liveRender = (import.meta.env.EDITING || "").trim() === "true";
 console.log('debuging en variables')
 console.log('LIVERENDER', liveRender)
 console.log(import.meta.env.EDITING)
+console.log('typeof import.meta.env.EDITING: ', typeof import.meta.env.EDITING);
 ---
 
 {
