@@ -1,11 +1,11 @@
 <script>
-  import { Container, Section, Prose } from 'fulldev-ui'
+  // import { Container, Section, Prose } from 'fulldev-ui'
 </script>
 
-<Section {...$$restProps}>
+<!-- <Section {...$$restProps}>
   <Container>
     <Prose class="mx-auto">
       <slot />
     </Prose>
   </Container>
-</Section>
+</Section> -->

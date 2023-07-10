@@ -1,17 +1,21 @@
 <script lang="ts">
-  import {
-    Section,
-    Container,
-    Highlight,
-    Stack,
-    Button,
-    Image,
-  } from 'fulldev-ui'
+  // import {
+  //   Section,
+  //   Container,
+  //   Highlight,
+  //   Stack,
+  //   Button,
+  //   Image,
+  // } from 'fulldev-ui'
 
-  export let content: any
+  // export let content: any
 </script>
+<h1>
 
-<Section class="dark pt-0">
+  hi there
+</h1>
+
+<!-- <Section class="dark pt-0">
   <Container>
     <Stack center>
       <Highlight class="large">
@@ -33,4 +37,4 @@
       <Image {...content.image} />
     </Stack>
   </Container>
-</Section>
+</Section> -->
