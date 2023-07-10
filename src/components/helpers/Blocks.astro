@@ -11,14 +11,8 @@ interface Props {
 const { pageData, keys } = Astro.props
 const liveRender = import.meta.env.EDITING === "true";
 console.log('debuging en variables')
-console.log(import.meta.env)
+console.log('LIVERENDER', liveRender)
 console.log(import.meta.env.EDITING)
-console.log(import.meta.env.PRODUCTION)
-console.log(process.env)
-console.log(process.env.EDITING)
-console.log(process.env.PRODUCTION)
-
-
 ---
 
 {
