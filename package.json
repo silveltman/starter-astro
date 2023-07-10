@@ -33,7 +33,6 @@
     "@iconify-json/tabler": "^1.1.81",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.0",
-    "prettier-plugin-tailwindcss": "^0.3.0",
     "unocss-preset-radix": "^2.5.1"
   }
 }
