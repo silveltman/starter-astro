@@ -878,13 +878,6 @@
     "@swc/core-win32-ia32-msvc" "1.3.59"
     "@swc/core-win32-x64-msvc" "1.3.59"
 
-"@tailwindcss/forms@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.3.tgz#e4d7989686cbcaf416c53f1523df5225332a86e7"
-  integrity sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==
-  dependencies:
-    mini-svg-data-uri "^1.2.3"
-
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
@@ -2180,15 +2173,6 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-fulldev-ui@^0.5.16:
-  version "0.5.16"
-  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.16.tgz#ea460cb15a0ad17365efda1c4c82b357cf9768e8"
-  integrity sha512-t8yO0928u0sTCgNcWKkPJSSJco0v5vWJX+fljOmcLgUYWGOeYH3andIrVstoX0Gipoy3WQHdPmAN9tdGi/ajJA==
-  dependencies:
-    "@radix-ui/colors" "^0.1.8"
-    "@rodneylab/svelte-social-icons" "^0.0.26"
-    "@tailwindcss/forms" "^0.5.3"
-
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -2387,6 +2371,15 @@ hastscript@^7.0.0:
     hast-util-parse-selector "^3.0.0"
     property-information "^6.0.0"
     space-separated-tokens "^2.0.0"
+
+hommeui@^0.6.9:
+  version "0.6.9"
+  resolved "https://registry.yarnpkg.com/hommeui/-/hommeui-0.6.9.tgz#09ca70642d5084dbf8f1520f21d2e7fcb815472c"
+  integrity sha512-U2ICkFzXIaK/2gOJHgJN7nqYWWnuI4RF1+Z/uj27d5VK/aBaXGk1OhljlgQM/TH6jjSr30ONUkEA9+NdwHJ41w==
+  dependencies:
+    "@iconify-json/tabler" "^1.1.81"
+    "@rodneylab/svelte-social-icons" "^0.0.26"
+    unocss-preset-radix "^2.5.1"
 
 html-escaper@^3.0.3:
   version "3.0.3"
@@ -3235,7 +3228,7 @@ mimic-response@^3.1.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-3.1.0.tgz#2d1d59af9c1b129815accc2c46a022a5ce1fa3c9"
   integrity sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==
 
-mini-svg-data-uri@^1.2.3, mini-svg-data-uri@^1.4.4:
+mini-svg-data-uri@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
   integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==

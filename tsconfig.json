@@ -7,11 +7,12 @@
       "@layouts/*": ["src/layouts/*"],
       "@components/*": ["src/components/*"],
       "@data/*": ["src/data/*"],
-      "@content/*": ["src/content/*"]
+      "@content/*": ["src/content/*"],
+      "hommeui/*": ["node_modules/hommeui/dist/*"]
     }
     // "types": [
     //   "@modyfi/vite-plugin-yaml/modules"
     //   ],
   },
-  "include": ["src/**/*", "node_modules/fulldev-ui/dist/**/*.d.ts"]
+  "include": ["src/**/*", "node_modules/hommeui/dist/**/*.d.ts"]
 }

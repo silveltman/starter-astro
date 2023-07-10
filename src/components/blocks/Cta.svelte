@@ -1,10 +1,11 @@
 <script lang="ts">
-  import { Section, Container, Highlight, Stack, Button, Panel } from 'fulldev-ui'
+  import {Logo} from 'hommeui'
 
-  export let content: any
 </script>
 
-<Section class="dark">
+<Logo src="/logo.svg" alt="my company"></Logo>
+
+<!-- <Section class="dark">
   <Container>
     <Panel>
       <Highlight center>
@@ -25,4 +26,4 @@
       </Highlight>
     </Panel>
   </Container>
-</Section>
+</Section> -->

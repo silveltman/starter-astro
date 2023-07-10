@@ -1,7 +1,8 @@
 // uno.config.ts
 import { defineConfig, presetIcons, presetUno, presetWebFonts } from 'unocss'
 import { presetRadix } from 'unocss-preset-radix'
-import { presetShortcuts, presetResponsive } from './homme'
+// @ts-ignore
+import { presetShortcuts, presetResponsive } from 'hommeui/uno'
 
 export default defineConfig({
   theme: {
