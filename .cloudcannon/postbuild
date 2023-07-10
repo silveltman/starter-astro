@@ -1,4 +1,8 @@
 #!/bin/bash
+    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
+    echo "ENV_EDITING: $ENV_EDITING"
+    echo "ENV: $ENV"
+    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
 
 # Check if ENV.production is true
 if [ "$ENV_PRODUCTION" = "true" ]
