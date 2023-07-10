@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Print the environment variable values for debugging
+echo "ENV: $ENV"
+echo "ENV.production: $ENV.production"
+echo "ENV.editing: $ENV.editing"
+
 # Check if ENV.production is true
 if [ "$ENV.production" = "true" ]
 then
