@@ -1,10 +1,13 @@
 #!/bin/bash
 
+# Check if ENV.production is true
 if [ "$PRODUCTION" = "true" ]
 then
     # If true, run the desired command
+    echo "PRODUCTION: $ENV"
     echo "Running jampack ./dist..."
-    jampack ./dist
+    yarn jampack
 else
-    echo "Not running jampack. ENV.production is not true."
+    echo "PRODUCTION: $ENV"
+    echo "Not running jampack. PRODUCTION is not true."
 fi

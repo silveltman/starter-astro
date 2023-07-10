@@ -8,7 +8,6 @@
     "start": "astro dev",
     "build": "astro build",
     "jampack": "jampack ./dist",
-    "build:prod": "yarn build && yarn jampack",
     "preview": "astro preview",
     "browsersync": "browser-sync start --server 'dist' --files 'dist'",
     "astro": "astro",
