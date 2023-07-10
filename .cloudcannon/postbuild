@@ -4,8 +4,10 @@
 if [ "$ENV_PRODUCTION" = "true" ]
 then
     # If true, run the desired command
+    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
     echo "Running jampack ./dist..."
     jampack ./dist
 else
+    echo "ENV_PRODUCTION: $ENV_PRODUCTION"
     echo "Not running jampack. ENV.production is not true."
 fi
