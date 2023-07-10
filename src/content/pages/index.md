@@ -17,7 +17,7 @@ blocks:
       text: Lorem ipsum
       href: '#'
     image:
-      src: /hero.jpg
+      src: /remote-local/906ecb4b53b207f09b258b0b298f024b.jpg
       alt: My alt
   cta:
     _component: Cta

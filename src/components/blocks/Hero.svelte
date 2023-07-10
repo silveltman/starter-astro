@@ -8,12 +8,14 @@
   //   Image,
   // } from 'fulldev-ui'
 
-  // export let content: any
+  export let content: any
 </script>
 <h1>
 
   hi there
 </h1>
+
+<img src={content.image.src} alt={content.image.alt}>
 
 <!-- <Section class="dark pt-0">
   <Container>

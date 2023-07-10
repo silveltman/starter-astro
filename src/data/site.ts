@@ -1,5 +1,5 @@
 interface Site {
-  name: string
+  title: string
   url: string
   image: string
   logo: string
@@ -7,7 +7,7 @@ interface Site {
 }
 
 const site: Site = {
-  name: 'COMPANY NAME',
+  title: 'COMPANY',
   url: 'https://loremipsum.com',
   image: '',
   logo: '/logo.svg',

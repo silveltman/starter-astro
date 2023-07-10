@@ -1,9 +1,9 @@
 {
   "ssg": "astro",
   "build_configuration": {
-    "preserved_paths": "",
+    "preserved_paths": "node_modules/",
     "environment_variables": [
-      { "key": "EDITING", "value": "FALSE" },
+      { "key": "EDITING", "value": "true" },
       { "key": "PRODUCTION", "value": "true" }
     ],
     "install_command": "yarn install",

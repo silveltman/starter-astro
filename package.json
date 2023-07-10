@@ -4,15 +4,14 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "astro": "astro",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "jampack": "jampack ./dist",
     "preview": "astro preview",
     "browsersync": "browser-sync start --server 'dist' --files 'dist'",
-    "astro": "astro",
-    "cache-remote-images": "node cacheRemoteImages.js",
-    "down": "node cacheRemoteImages.js"
+    "remote-local": "node scripts/remoteLocal.js"
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.2.3",
@@ -24,14 +23,15 @@
     "astro": "^2.5.1",
     "astro-robots-txt": "^0.5.0",
     "astro-seo": "^0.7.2",
+    "glob": "^10.3.3",
     "hommeui": "^0.6.9",
+    "prettier-plugin-astro": "^0.10.0",
     "svelte": "^3.59.1",
     "unocss": "^0.53.4"
   },
   "devDependencies": {
     "@iconify-json/tabler": "^1.1.81",
     "prettier": "^2.8.8",
-    "prettier-plugin-astro": "^0.9.0",
     "prettier-plugin-svelte": "^2.10.0",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "unocss-preset-radix": "^2.5.1"

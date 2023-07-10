@@ -5,10 +5,10 @@ import { SEO } from 'astro-seo'
 const pageSeo = Astro.props.seo
 const defaultSeo = {
   charset: 'UTF-8',
-  titleDefault: site.name,
+  titleDefault: site.title,
   openGraph: {
     basic: {
-      title: site.name,
+      title: site.title,
       type: 'website',
       image: Astro.url.pathname + site.image,
     },

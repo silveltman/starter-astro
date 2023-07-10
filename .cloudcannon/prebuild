@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ "$PRODUCTION" = "true" ]
+then
+    echo "PRODUCTION: $ENV"
+    echo "Running remote-local. Saving remote files locally..."
+    yarn remote-local
+else
+    echo "PRODUCTION: $ENV"
+    echo "Not running remote-local. PRODUCTION is not true."
+fi
